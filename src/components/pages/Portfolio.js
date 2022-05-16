@@ -20,7 +20,7 @@ export default function Portfolio() {
           <Card sx={{ maxWidth: 500 }}>
             <CardMedia
               component="img"
-              height="250"
+              width= "100%"
               image= {homeImage}
               alt="Login page for Home Improvement App"
             />
@@ -35,8 +35,8 @@ export default function Portfolio() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Github</Button>
-              <Button size="small">Deployed</Button>
+              <Button href="https://github.com/EthanP94/Home-Improvement" target="_blank" size="small">Github</Button>
+              <Button href="https://cryptic-coast-15012.herokuapp.com" target="_blank" size="small">Deployed</Button>
             </CardActions>
           </Card>
         </div>
@@ -44,7 +44,7 @@ export default function Portfolio() {
           <Card sx={{ maxWidth: 500 }}>
             <CardMedia
               component="img"
-              height="250"
+              width= "100%"
               image= {carImage}
               alt="Homepage for car selling/searching website"
             />
@@ -69,7 +69,7 @@ export default function Portfolio() {
           <Card sx={{ maxWidth: 500 }}>
             <CardMedia
               component="img"
-              height="250"
+              width= "100%"
               image= {animeImage}
               alt="Homepage for anime searching website"
             />
