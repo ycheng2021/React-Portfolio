@@ -10,6 +10,8 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import {Link} from 'react-router-dom';
+import clogo from '../images/clogo.jpeg';
+import '../styles/home.css';
 
 const pages = [{name:'About', link: '/about'}, {name:'Skills', link: '/skills'}, {name:'Portfolio', link: '/portfolio'}, {name: 'Contact', link: '/contact'}, {name: 'Resume', link: '/resume'}];
 
@@ -26,27 +28,10 @@ const Home = () => {
   
     return (
         <div>
-          <AppBar position="static">
+          <AppBar position="relative">
             <Container maxWidth="xl">
               <Toolbar disableGutters>
-                <Typography
-                  variant="h6"
-                  noWrap
-                  component="a"
-                  href="/"
-                  sx={{
-                    mr: 2,
-                    display: { xs: 'none', md: 'flex' },
-                    fontFamily: 'monospace',
-                    fontWeight: 700,
-                    letterSpacing: '.3rem',
-                    color: 'inherit',
-                    textDecoration: 'none',
-                  }}
-                >
-                  AC
-                </Typography>
-
+                <img src= {clogo} alt="logo" class="navLogo"></img>
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                   <IconButton
                     size="large"

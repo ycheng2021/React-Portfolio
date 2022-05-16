@@ -90,6 +90,82 @@ export default function Portfolio() {
             </CardActions>
           </Card>
         </div>
+        <div class="project-cards">
+          <Card sx={{ maxWidth: 500 }}>
+            <CardMedia
+              component="img"
+              width= "100%"
+              image= {ultimateImage}
+              alt="Homepage for tech-related blogs"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Ultimate Tech Blog
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+              Ultimate Tech Blog is a web application that allows users to make posts and comments on technology related topics. User can 
+              view the posts and choose to add post or comment by logging into their account. Users are also given the option to update or 
+              delete their posts through the dashboard. Once the user is logged in, the session will be saved and makes it more convenient 
+              to come back to the site within a certain period of time. When the session ends, the website will ask the user to login again.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Github</Button>
+              <Button size="small">Deployed</Button>
+            </CardActions>
+          </Card>
+        </div>
+        <div class="project-cards">
+          <Card sx={{ maxWidth: 500 }}>
+            <CardMedia
+              component="img"
+              width= "100%"
+              image= {weatherImage}
+              alt="Homepage for anime searching website"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+              Forecaster
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+              Forecaster is a simplified web application designed to generate weather information based on the city 
+              searched. The webpage will provide the daily weather as well as a five day forecast, which includes information 
+              like date, weather condition, humidity, wind speed, and UV index. The user is also able to save information through 
+              the search history, once the button for that search is generated, the user is able to easily access the information 
+              again by clicking the buttons.  
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Github</Button>
+              <Button size="small">Deployed</Button>
+            </CardActions>
+          </Card>
+        </div>
+        <div class="project-cards">
+          <Card sx={{ maxWidth: 500 }}>
+            <CardMedia
+              component="img"
+              width= "100%"
+              image= {quizImage}
+              alt="Homepage for anime searching website"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+              Code Quiz
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+              Code Quiz is a simple web game that is built with HTML, CSS, and Javascript. The game begins with 
+              60 seconds and will count down by seconds once the player clicks the Start button. The quiz consists 
+              of five simple coding questions and score is generated based on how fast and accurate the player answers. 
+              The player will then submit initial with the score to be added to the highscore board.
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Github</Button>
+              <Button size="small">Deployed</Button>
+            </CardActions>
+          </Card>
+        </div>
       </div>
     );
   }
