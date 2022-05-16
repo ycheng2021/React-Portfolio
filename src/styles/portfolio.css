@@ -1,0 +1,9 @@
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-cards {
+    margin: 40px;
+}
