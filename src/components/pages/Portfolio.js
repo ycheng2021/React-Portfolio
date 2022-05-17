@@ -60,8 +60,8 @@ export default function Portfolio() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Github</Button>
-              <Button size="small">Deployed</Button>
+              <Button href="https://github.com/LinnetteCapul/El-Caro-Modelo" target="_blank" size="small">Github</Button>
+              <Button href="https://obscure-basin-42076.herokuapp.com/" target="_blank" size="small">Deployed</Button>
             </CardActions>
           </Card>
         </div>
@@ -85,8 +85,8 @@ export default function Portfolio() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Github</Button>
-              <Button size="small">Deployed</Button>
+              <Button href="https://github.com/EthanP94/The-Grand-Line" target="_blank" size="small">Github</Button>
+              <Button href="https://ethanp94.github.io/The-Grand-Line/" target="_blank" size="small">Deployed</Button>
             </CardActions>
           </Card>
         </div>
@@ -110,8 +110,8 @@ export default function Portfolio() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Github</Button>
-              <Button size="small">Deployed</Button>
+              <Button href="https://github.com/ycheng2021/Ultimate-Tech-Blog" target="_blank" size="small">Github</Button>
+              <Button href="https://ancient-peak-76701.herokuapp.com/" target="_blank" size="small">Deployed</Button>
             </CardActions>
           </Card>
         </div>
@@ -121,7 +121,7 @@ export default function Portfolio() {
               component="img"
               width= "100%"
               image= {weatherImage}
-              alt="Homepage for anime searching website"
+              alt="a weather dashboard"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -136,8 +136,8 @@ export default function Portfolio() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Github</Button>
-              <Button size="small">Deployed</Button>
+              <Button href="https://github.com/ycheng2021/Weather-Dashboard" target="_blank" size="small">Github</Button>
+              <Button href="https://ycheng2021.github.io/Weather-Dashboard/" target="_blank" size="small">Deployed</Button>
             </CardActions>
           </Card>
         </div>
@@ -147,7 +147,7 @@ export default function Portfolio() {
               component="img"
               width= "100%"
               image= {quizImage}
-              alt="Homepage for anime searching website"
+              alt="coding quiz starting page"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -161,8 +161,8 @@ export default function Portfolio() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Github</Button>
-              <Button size="small">Deployed</Button>
+              <Button href="https://github.com/ycheng2021/Code-Quiz" target="_blank" size="small">Github</Button>
+              <Button href="https://ycheng2021.github.io/Code-Quiz/" target="_blank" size="small">Deployed</Button>
             </CardActions>
           </Card>
         </div>

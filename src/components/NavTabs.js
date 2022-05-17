@@ -13,7 +13,7 @@ import {Link} from 'react-router-dom';
 import clogo from '../images/clogo.jpeg';
 import '../styles/home.css';
 
-const pages = [{name:'About', link: '/about'}, {name:'Skills', link: '/skills'}, {name:'Portfolio', link: '/portfolio'}, {name: 'Contact', link: '/contact'}, {name: 'Resume', link: '/resume'}];
+const pages = [{name:'Home', link: '/'}, {name:'Portfolio', link: '/portfolio'}, {name: 'Contact', link: '/contact'}, {name: 'Resume', link: '/resume'}];
 
 const Home = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -31,7 +31,7 @@ const Home = () => {
           <AppBar position="relative">
             <Container maxWidth="xl">
               <Toolbar disableGutters>
-                <img src= {clogo} alt="logo" class="navLogo"></img>
+                <a href="/"><img src= {clogo} alt="logo" class="navLogo"></img></a>
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                   <IconButton
                     size="large"
