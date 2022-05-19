@@ -13,7 +13,7 @@ import {Link} from 'react-router-dom';
 import clogo from '../images/clogo.jpeg';
 import '../styles/home.css';
 
-const pages = [{name:'Home', link: '/'}, {name:'Portfolio', link: '/portfolio'}, {name: 'Contact', link: '/contact'}, {name: 'Resume', link: '/resume'}];
+const pages = [{name:'Home', link: '/'}, {name:'Portfolio', link: '/portfolio'}];
 
 const Home = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -25,13 +25,13 @@ const Home = () => {
     const handleCloseNavMenu = () => {
       setAnchorElNav(null);
     };
-  
+
     return (
         <div>
-          <AppBar position="relative">
+          <AppBar position="relative" className="navbar">
             <Container maxWidth="xl">
               <Toolbar disableGutters>
-                <a href="/"><img src= {clogo} alt="logo" class="navLogo"></img></a>
+                <a href="/"><img src= {clogo} alt="logo" className="navLogo"></img></a>
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                   <IconButton
                     size="large"
@@ -66,6 +66,12 @@ const Home = () => {
                       <Link to={page.link}><Typography textAlign="center">{page.name}</Typography></Link>
                       </MenuItem>
                     ))}
+                    <MenuItem>
+                      <Link to="#contact">Contact</Link>
+                    </MenuItem>
+                    <MenuItem>
+                      <Link to= "/Yang_Cheng_Resume.PDF" target="_blank">Resume</Link>
+                    </MenuItem>
                   </Menu>
                 </Box>
                 <Typography
@@ -84,7 +90,6 @@ const Home = () => {
                     textDecoration: 'none',
                   }}
                 >
-                  ANNA CHENG
                 </Typography>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                   {pages.map((page) => (
@@ -98,6 +103,24 @@ const Home = () => {
                     </Button>
                     </Link>
                   ))}
+                  <Link to="#contact">
+                    <Button
+                      key="contact"
+                      onClick= {handleCloseNavMenu}
+                      sx={{ my: 2, color: 'white', display: 'block' }}
+                    >
+                      Contact
+                    </Button>
+                  </Link>
+                  <Link to="/Yang_Cheng_Resume.PDF" target="_blank">
+                    <Button
+                      key= "resume"
+                      onClick= {handleCloseNavMenu}
+                      sx={{ my: 2, color: 'white', display: 'block' }}
+                    >
+                      Resume
+                    </Button>
+                  </Link>
                 </Box>
               </Toolbar>
             </Container>
