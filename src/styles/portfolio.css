@@ -2,8 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 50px auto;
 }
 
 .project-cards {
     margin: 40px;
 }
+
+.MuiCardActions-root {
+    justify-content: center;
+} 

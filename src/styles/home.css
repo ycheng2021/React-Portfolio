@@ -6,6 +6,14 @@ body {
 .MuiToolbar-root {
     float: right;
 }
+.navbar {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.MuiContainer-root {
+    margin-right: 10px !important;
+}
 
 .navLogo {
     width: 30px !important;
@@ -14,4 +22,34 @@ body {
 
 .css-1t6c9ts a{
     text-decoration: none !important;
+}
+
+.about {
+    font-size: 18x;
+    color: white;
+    margin: 100px;
+}
+
+.icons {
+    font-size: 60px;
+}
+
+.icon-name {
+    font-size: 20px;
+    margin: 0;
+}
+
+.skills-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 20px;
 }
