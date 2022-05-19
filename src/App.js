@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavTabs from "./components/NavTabs"
-import About from "./components/Home";
+import Home from "./components/Home";
 import Portfolio from "./components/pages/Portfolio";
+import Footer from "./components/Footer"
 
 function App() {
     return (
@@ -11,7 +12,7 @@ function App() {
             <Routes>
                 <Route 
                     path="/"
-                    element={<About/>}
+                    element={<Home/>}
                 />
                 <Route 
                     path="/portfolio"
@@ -22,6 +23,7 @@ function App() {
                     element={<h1>Wrong Page!!</h1>}
                 />
             </Routes>
+            <Footer />
         </Router>
     )
 }
