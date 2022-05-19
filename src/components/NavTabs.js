@@ -121,7 +121,7 @@ const Home = () => {
                     </Link>
                   ))}
                   <Link to="">
-                    <a
+                      <a
                         href="/"
                         onClick={e => {
                           let footer = document.getElementById("footer");
