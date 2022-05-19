@@ -2,7 +2,10 @@ body {
     background: linear-gradient(90deg, rgb(14, 7, 141) 0%, rgba(187,37,236,1) 35%, rgba(255,214,124,1) 100%);
     margin: 0;
     text-align: center;
+    min-height: 100vh;
+    position: relative;
 }
+
 .MuiToolbar-root {
     float: right;
 }
@@ -52,4 +55,14 @@ body {
 
 .skill {
     margin: 20px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;            
 }

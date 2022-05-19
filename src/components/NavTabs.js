@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useEffect} from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -25,6 +25,13 @@ const Home = () => {
     const handleCloseNavMenu = () => {
       setAnchorElNav(null);
     };
+
+    useEffect(() => {
+      let url = window.location.href.split("/");
+      let target = url[url.length - 1].toLowerCase();
+      let element = document.getElementById(target);
+      element && element.scrollIntoView({ behavior: "smooth", block: "start"});
+    }, []);
 
     return (
         <div>
@@ -67,7 +74,17 @@ const Home = () => {
                       </MenuItem>
                     ))}
                     <MenuItem>
-                      <Link to="#contact">Contact</Link>
+                    <a
+                      href="/"
+                      onClick={e => {
+                        let footer = document.getElementById("footer");
+                        e.preventDefault();
+                        footer && footer.scrollIntoView({ behavior: "smooth", block: "start" });
+                        window.history.pushState("footer", "footer", "/contact");
+                      }}
+                    >
+                      Contact
+                    </a>
                     </MenuItem>
                     <MenuItem>
                       <Link to= "/Yang_Cheng_Resume.PDF" target="_blank">Resume</Link>
@@ -103,14 +120,24 @@ const Home = () => {
                     </Button>
                     </Link>
                   ))}
-                  <Link to="#contact">
-                    <Button
+                  <Link to="">
+                    <a
+                        href="/"
+                        onClick={e => {
+                          let footer = document.getElementById("footer");
+                          e.preventDefault();
+                          footer && footer.scrollIntoView({ behavior: "smooth", block: "start" });
+                          window.history.pushState("footer", "footer", "/contact");
+                        }}
+                      >
+                       <Button
                       key="contact"
                       onClick= {handleCloseNavMenu}
                       sx={{ my: 2, color: 'white', display: 'block' }}
                     >
                       Contact
                     </Button>
+                    </a>
                   </Link>
                   <Link to="/Yang_Cheng_Resume.PDF" target="_blank">
                     <Button

@@ -1,8 +1,9 @@
 import * as React from 'react';
+import '../styles/home.css';
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <div id="footer">
             Footer is a React component
         </div>
     )

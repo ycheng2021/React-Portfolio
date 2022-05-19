@@ -2,7 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 50px auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .project-cards {
