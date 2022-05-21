@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 200px;
 }
 
 .project-cards {
@@ -13,3 +13,4 @@
 .MuiCardActions-root {
     justify-content: center;
 } 
+

@@ -17,10 +17,8 @@ export default function Homepage() {
       <div className="about">
         <h1 className="greeting">Hi, I am Anna</h1>
         <p className="self-introduction">An aspiring full-stack developer with experience implementing
-          front-end and back-end code. Fast learner with a drive to
-          learn and master new technologies to enhance website
-          interactions. Team player with excellent communication
-          skills.</p>
+          front-end and back-end code. Fast learner with a drive to learn and master new technologies to enhance website
+          interactions. Team player with excellent communication skills.</p>
         <div className="skills-container">
           <h2>Skills</h2>
           <div className="skills-list">
@@ -37,8 +35,8 @@ export default function Homepage() {
               <h5 className="icon-name">Javascript</h5>
             </div>
             <div className="skill">
-              <DiGit className="icons" />
-              <h5 className="icon-name">Git</h5>
+              <SiVisualstudiocode className="icons" />
+              <h5 className="icon-name">VS Code</h5>
             </div>
             <div className="skill">
               <SiJquery className="icons" />
@@ -57,8 +55,8 @@ export default function Homepage() {
               <h5 className="icon-name">React</h5>
             </div>
             <div className="skill">
-              <SiVisualstudiocode className="icons" />
-              <h5 className="icon-name">VS Code</h5>
+              <DiGit className="icons" />
+              <h5 className="icon-name">Git</h5>
             </div>
             <div className="skill">
               <SiAdobe className="icons" />
