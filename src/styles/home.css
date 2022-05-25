@@ -1,14 +1,22 @@
 body {
-    background: linear-gradient(90deg, rgb(14, 7, 141) 0%, rgba(187,37,236,1) 35%, rgba(255,214,124,1) 100%);
     margin: 0;
     text-align: center;
     min-height: 100vh;
     position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
-.MuiToolbar-root {
-    float: right;
+.home {
+    background-image: url("../images/background-gradient.jpg");
 }
+
+.background {
+    background-image: url("../images/bubbles.jpg");
+    background-size: 100% 100%;
+    height: 1525px;
+}
+
 .navbar {
     background-color: transparent !important;
     box-shadow: none !important;
@@ -18,19 +26,34 @@ body {
     margin-right: 10px !important;
 }
 
+.css-1q39md6-MuiButtonBase-root-MuiButton-root {
+    font-size: 30px !important;
+}
+
 .navLogo {
     width: 30px !important;
     padding: 10px;
 }
+.css-1t6c9ts {
+    flex-direction: column;
+    padding-top: 300px;
+}
+
 
 .css-1t6c9ts a{
     text-decoration: none !important;
 }
 
+.portrait {
+    border-radius: 50%;
+    margin-bottom: 100px;
+}
+
 .about {
     font-size: 18x;
     color: white;
-    margin: 100px;
+    padding: 150px 30%;
+    
 }
 
 .icons {
@@ -43,8 +66,11 @@ body {
 }
 
 .skills-container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
+    padding-top: 200px;
+    margin-bottom: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .skills-list {
@@ -54,14 +80,14 @@ body {
 }
 
 .skill {
-    margin: 20px;
+    margin: 10px;
 }
 
 #footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 6rem;         
+    height: 6rem;        
 }
 
 .top-footer {
@@ -91,3 +117,24 @@ body {
     font-size: 35px;
     color: rgb(81, 3, 155);
 }
+
+.portfolio {
+    padding-top: 100px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 200px;
+}
+
+.project-cards {
+    margin: 40px;
+}
+
+.MuiCardActions-root {
+    justify-content: center;
+} 
+
