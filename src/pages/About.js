@@ -1,6 +1,6 @@
 import NavTabs from "../components/NavTabs";
 import React from "react";
-import "../styles/home.css";
+import "../styles/style.css";
 import { FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -16,7 +16,7 @@ const About = () => {
   return (
     <div className="about-page">
       <NavTabs />
-      <div className="about" id="about">
+      <div className="about">
         <img
           src="/anna-image.png"
           alt="front view photography of Anna Cheng"

@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Happy Monkey', cursive;
 }
 
 .about-page,
@@ -30,7 +31,7 @@ body {
 
 .home {
     height: 100vh !important;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .home a {
@@ -100,15 +101,19 @@ body {
 #footer {
     position: absolute;
     bottom: 0;
-    width: 100%;     
+    width: 100%;  
+    background-color: #0000CD;   
 }
 
 .text {
     margin: 0;
+    font-size: 20px;
 }
 
 .contact-icon {
     font-size: 35px;
+    color: white;
+    padding: 10px 5px;
 }
 
 .email,
@@ -125,14 +130,12 @@ body {
     color: rgb(81, 3, 155);
 }
 
-.portfolio {
-    padding: 100px 0;
-}
-
 .portfolio-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 .css-1t6c9ts {
@@ -147,3 +150,8 @@ body {
     justify-content: center;
 } 
 
+.project-container {
+    background-color: #D8EDF8;
+    height: 100vh;
+    color: #052852;
+}

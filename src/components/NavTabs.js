@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
-import "../styles/home.css";
+import "../styles/style.css";
 
 const Home = () => {
   const pages = [
@@ -71,7 +71,7 @@ const Home = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                    <Link to={page.link}>
+                    <Link key={page.name} to={page.link}>
                       <Typography textAlign="center">{page.name}</Typography>
                     </Link>
                   </MenuItem>
@@ -118,7 +118,7 @@ const Home = () => {
             ></Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
-                <Link to={page.link}>
+                <Link key={page.name} to={page.link}>
                   <Button
                     key={page.name}
                     onClick={handleCloseNavMenu}
@@ -128,29 +128,27 @@ const Home = () => {
                   </Button>
                 </Link>
               ))}
-              <Link to="">
-                <a
-                  href="/"
-                  onClick={(e) => {
-                    let footer = document.getElementById("footer");
-                    e.preventDefault();
-                    footer &&
-                      footer.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start",
-                      });
-                    window.history.pushState("footer", "footer", "/contact");
-                  }}
+              <a
+                href="/"
+                onClick={(e) => {
+                  let footer = document.getElementById("footer");
+                  e.preventDefault();
+                  footer &&
+                    footer.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  window.history.pushState("footer", "footer", "/contact");
+                }}
+              >
+                <Button
+                  key="contact"
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
                 >
-                  <Button
-                    key="contact"
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
-                  >
-                    Contact
-                  </Button>
-                </a>
-              </Link>
+                  Contact
+                </Button>
+              </a>
               <Link to="/Yang_Cheng_Resume.PDF" target="_blank">
                 <Button
                   key="resume"
