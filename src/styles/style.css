@@ -1,0 +1,211 @@
+html {
+    margin:0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-family: 'Happy Monkey', cursive;
+}
+
+.about-page,
+.portfolio-page {
+    background-image: url("../images/background-gradient.jpg");
+}
+
+.pageslist {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-top: 25vh;
+}
+
+.home {
+    height: 100vh !important;
+    padding-bottom: 150px;
+    background-image: url("../images/bubbles.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.home a {
+    text-decoration: none !important;
+}
+
+.navbar {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.MuiContainer-root {
+    margin-right: 10px !important;
+}
+
+.css-1q39md6-MuiButtonBase-root-MuiButton-root {
+    font-size: 30px !important;
+}
+
+.css-o69gx8-MuiCardMedia-root {
+    object-fit: contain !important;
+}
+
+.navLogo {
+    width: 30px !important;
+    padding: 10px;
+}
+
+.css-1t6c9ts a{
+    text-decoration: none !important;
+}
+
+.portrait {
+    border-radius: 50%;
+    margin-bottom: 100px;
+}
+
+.about {
+    font-size: 18x;
+    color: white;
+    padding: 150px 20%;
+}
+
+.greeting {
+    font-size: 50px;
+}
+
+.icons {
+    font-size: 60px;
+}
+
+.icon-name {
+    font-size: 20px;
+    margin: 0;
+}
+
+.skills-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 200px;
+    margin-bottom: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 10px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;  
+    background-image: url("../images/footer-bubbles.jpg");
+    background-size: 100%;
+}
+
+.text {
+    margin: 0;
+    font-size: 20px;
+}
+
+.contact-icon {
+    font-size: 35px;
+    color: white;
+    padding: 10px 5px;
+}
+
+.email,
+.social-media {
+    padding: 10px;
+}
+
+.note {
+    padding-bottom: 10px;
+}
+
+.email-icon {
+    font-size: 35px;
+    color: rgb(81, 3, 155);
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.css-1t6c9ts {
+    justify-content: right !important;
+}
+
+.project-cards {
+    margin: 40px;
+}
+
+.MuiCardActions-root {
+    justify-content: center;
+} 
+
+.project-container {
+    background-image: url("../images/background-gradient.jpg");
+    height: 100%;
+}
+
+.project-image {
+    margin: 50px auto !important;
+    max-width: 50%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 180px;
+}
+
+.project-links {
+    margin: 20px !important;
+}
+
+.project-title {
+    font-size: 60px;
+}
+
+.project-description {
+    margin: 50px 10%;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1240px) {
+    .about {
+        padding: 150px 20%;
+    }
+}
+
+
+@media only screen and (max-width: 896px) {
+    .about {
+        padding: 150px 10%;
+    }
+
+    .project-image {
+        margin: 50px auto !important;
+        max-width: 90%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
+}

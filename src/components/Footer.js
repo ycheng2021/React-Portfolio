@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../styles/home.css';
+import '../styles/style.css';
 import { FaLinkedin }  from 'react-icons/fa'
 import { FaGithubSquare } from 'react-icons/fa'
 import { FaFacebookSquare } from 'react-icons/fa'

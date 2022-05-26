@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/home.css";
+import "../styles/style.css";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 
@@ -20,25 +20,23 @@ export default function Homepage() {
             Portfolio
           </Button>
         </Link>
-        <Link to="">
-          <a
-            href="/"
-            onClick={(e) => {
-              let footer = document.getElementById("footer");
-              e.preventDefault();
-              footer &&
-                footer.scrollIntoView({
-                  behavior: "smooth",
-                  block: "start",
-                });
-              window.history.pushState("footer", "footer", "/contact");
-            }}
-          >
-            <Button sx={{ my: 2, color: "white", display: "block" }}>
-              Contact
-            </Button>
-          </a>
-        </Link>
+        <a
+          href="/"
+          onClick={(e) => {
+            let footer = document.getElementById("footer");
+            e.preventDefault();
+            footer &&
+              footer.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            window.history.pushState("footer", "footer", "/contact");
+          }}
+        >
+          <Button sx={{ my: 2, color: "white", display: "block" }}>
+            Contact
+          </Button>
+        </a>
         <Link to="/Yang_Cheng_Resume.PDF" target="_blank">
           <Button key="resume" sx={{ my: 2, color: "white", display: "block" }}>
             Resume
