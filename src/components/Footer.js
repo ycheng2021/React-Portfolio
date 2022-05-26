@@ -10,12 +10,11 @@ const Footer = () => {
     return (
         <div id="footer">
             <div className="top-footer">
-                <div className="email">
-                    <p className="text">EMAIL</p>
-                    <a href="mailto:annacheng09@hotmail.com"><MdEmail className="email-icon"/></a>
-                </div>
                 <div className="social-media">
-                    <p className="text">CONNECT</p>
+                    <p className="text">CONTACT</p>
+                    <a href= "mailto:annacheng09@hotmail.com">
+                        <MdEmail className="contact-icon"/>
+                    </a> 
                     <a href="https://github.com/ycheng2021" target="_blank" rel="noopener noreferrer">
                         <FaGithubSquare className="contact-icon"/>
                     </a>

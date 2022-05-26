@@ -13,6 +13,11 @@ import { Link } from "react-router-dom";
 import "../styles/home.css";
 
 const Home = () => {
+  const pages = [
+    { name: "About", link: "/about" },
+    { name: "Portfolio", link: "/portfolio" },
+  ];
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -64,40 +69,13 @@ const Home = () => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                <MenuItem>
-                  <a
-                    href="/"
-                    onClick={(e) => {
-                      let footer = document.getElementById("about");
-                      e.preventDefault();
-                      footer &&
-                        footer.scrollIntoView({
-                          behavior: "smooth",
-                          block: "start",
-                        });
-                      window.history.pushState("about", "about", "/about");
-                    }}
-                  >
-                    About
-                  </a>
-                </MenuItem>
-                <MenuItem>
-                  <a
-                    href="/"
-                    onClick={(e) => {
-                      let portfolio = document.getElementById("portfolio");
-                      e.preventDefault();
-                      portfolio &&
-                        portfolio.scrollIntoView({
-                          behavior: "smooth",
-                          block: "start",
-                        });
-                      window.history.pushState("portfolio", "portfolio", "/portfolio");
-                    }}
-                  >
-                    Portfolio
-                  </a>
-                </MenuItem>
+                {pages.map((page) => (
+                  <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                    <Link to={page.link}>
+                      <Typography textAlign="center">{page.name}</Typography>
+                    </Link>
+                  </MenuItem>
+                ))}
                 <MenuItem>
                   <a
                     href="/"
@@ -109,7 +87,7 @@ const Home = () => {
                           behavior: "smooth",
                           block: "start",
                         });
-                      window.history.pushState("footer", "footer", "/contact");
+                      window.history.pushState("footer", "footer", "/");
                     }}
                   >
                     Contact
@@ -139,52 +117,17 @@ const Home = () => {
               }}
             ></Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              <Link to="">
-                <a
-                  href="/"
-                  onClick={(e) => {
-                    let about = document.getElementById("about");
-                    e.preventDefault();
-                    about &&
-                      about.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start",
-                      });
-                    window.history.pushState("about", "about", "/about");
-                  }}
-                >
+              {pages.map((page) => (
+                <Link to={page.link}>
                   <Button
-                    key="about"
+                    key={page.name}
                     onClick={handleCloseNavMenu}
                     sx={{ my: 2, color: "white", display: "block" }}
                   >
-                    About
+                    {page.name}
                   </Button>
-                </a>
-              </Link>
-              <Link to="">
-                <a
-                  href="/"
-                  onClick={(e) => {
-                    let portfolio = document.getElementById("portfolio");
-                    e.preventDefault();
-                    portfolio &&
-                      portfolio.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start",
-                      });
-                    window.history.pushState("portfolio", "portfolio", "/portfolio");
-                  }}
-                >
-                  <Button
-                    key="portfolio"
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
-                  >
-                    Portfolio
-                  </Button>
-                </a>
-              </Link>
+                </Link>
+              ))}
               <Link to="">
                 <a
                   href="/"
