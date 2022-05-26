@@ -17,14 +17,13 @@ const Portfolio = () => {
       <NavTabs />
       <div className="portfolio-container">
         <div className="portfolio">
-          <h1>Things I've Built</h1>
+          <h1 className="greeting">Things I've Built</h1>
           <div className="portfolio-container">
             <div className="project-cards">
               <Link to="home-improvement">
                 <Card sx={{ maxWidth: 500 }}>
                   <CardMedia
                     component="img"
-                    width="100%"
                     image={homeImage}
                     alt="Login page for Home Improvement App"
                   />
@@ -36,7 +35,6 @@ const Portfolio = () => {
                 <Card sx={{ maxWidth: 500 }}>
                   <CardMedia
                     component="img"
-                    width="100%"
                     image={carImage}
                     alt="Homepage for car selling/searching website"
                   />
@@ -48,7 +46,6 @@ const Portfolio = () => {
                 <Card sx={{ maxWidth: 500 }}>
                   <CardMedia
                     component="img"
-                    width="100%"
                     image={animeImage}
                     alt="Homepage for anime searching website"
                   />
@@ -59,8 +56,7 @@ const Portfolio = () => {
               <Link to="ultimate-tech-blog">
                 <Card sx={{ maxWidth: 500 }}>
                   <CardMedia
-                    component="img"
-                    width="100%"
+                    component="img"                 
                     image={ultimateImage}
                     alt="Homepage for tech-related blogs"
                   />
@@ -71,8 +67,7 @@ const Portfolio = () => {
               <Link to="weather-dashboard">
                 <Card sx={{ maxWidth: 500 }}>
                   <CardMedia
-                    component="img"
-                    width="100%"
+                    component="img"                   
                     image={weatherImage}
                     alt="a weather dashboard"
                   />
@@ -83,8 +78,7 @@ const Portfolio = () => {
               <Link to="code-quiz">
                 <Card sx={{ maxWidth: 500 }}>
                   <CardMedia
-                    component="img"
-                    width="100%"
+                    component="img"                 
                     image={quizImage}
                     alt="coding quiz starting page"
                   />

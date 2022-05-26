@@ -22,13 +22,13 @@ const About = () => {
           alt="front view photography of Anna Cheng"
           className="portrait"
         ></img>
-        <h1 className="greeting">This is Anna</h1>
+        <h1 className="greeting">I am Anna</h1>
         <p className="self-introduction">
           Hi there! I am a full stack web developer with a background in art. I
           hope to use the skills I learned to combine art and coding to create
           cool projects and websites! Always looking to create things that will
           challenge me and teach me new skills or experiences! Currently
-          studying UI/UX and data structures as well as coding a new project
+          studying UI/UX and data structures, as well as coding a new project
           with the MERN stack to improve my skills.
         </p>
         <div className="skills-container">

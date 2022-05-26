@@ -9,11 +9,6 @@ body {
     position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    background-image: url("../images/bubbles.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     font-family: 'Happy Monkey', cursive;
 }
 
@@ -32,6 +27,11 @@ body {
 .home {
     height: 100vh !important;
     padding-bottom: 150px;
+    background-image: url("../images/bubbles.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .home a {
@@ -51,6 +51,10 @@ body {
     font-size: 30px !important;
 }
 
+.css-o69gx8-MuiCardMedia-root {
+    object-fit: contain !important;
+}
+
 .navLogo {
     width: 30px !important;
     padding: 10px;
@@ -68,7 +72,11 @@ body {
 .about {
     font-size: 18x;
     color: white;
-    padding: 150px 30%;
+    padding: 150px 20%;
+}
+
+.greeting {
+    font-size: 50px;
 }
 
 .icons {
@@ -102,7 +110,8 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;  
-    background-color: #0000CD;   
+    background-image: url("../images/footer-bubbles.jpg");
+    background-size: 100%;
 }
 
 .text {
@@ -151,7 +160,52 @@ body {
 } 
 
 .project-container {
-    background-color: #D8EDF8;
-    height: 100vh;
-    color: #052852;
+    background-image: url("../images/background-gradient.jpg");
+    height: 100%;
+}
+
+.project-image {
+    margin: 50px auto !important;
+    max-width: 50%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 180px;
+}
+
+.project-links {
+    margin: 20px !important;
+}
+
+.project-title {
+    font-size: 60px;
+}
+
+.project-description {
+    margin: 50px 10%;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1240px) {
+    .about {
+        padding: 150px 20%;
+    }
+}
+
+
+@media only screen and (max-width: 896px) {
+    .about {
+        padding: 150px 10%;
+    }
+
+    .project-image {
+        margin: 50px auto !important;
+        max-width: 90%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
 }

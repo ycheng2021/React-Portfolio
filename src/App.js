@@ -12,7 +12,7 @@ function App() {
     { name: "el-caro-modelo"},
     { name: "the-grand-line-anime"},
     { name: "ultimate-tech-blog"},
-    { name: "weather-ddashboard"},
+    { name: "weather-dashboard"},
     { name: "code-quiz"},
   ];
 
