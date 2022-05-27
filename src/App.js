@@ -1,11 +1,10 @@
 import React from "react";
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import SingleProject from "./pages/SingleProject";
-import "./App.css";
 
 function App() {
   const projects = [
@@ -19,19 +18,19 @@ function App() {
 
   return (
     <Router>
-      <Switch>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/portfolio" element={<Portfolio />} />
         {projects.map((project) => (
           <Route
             key={project.name}
-            path={`/portfolio/:${project.name}`}
+            exact path={`/portfolio/:${project.name}`}
             element={<SingleProject />}
           />
         ))}
         <Route path="*" element={<h1>Wrong Page!!</h1>} />
-      </Switch>
+      </Routes>
       <Footer />
     </Router>
   );
