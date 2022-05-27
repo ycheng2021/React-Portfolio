@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
+  "homepage": "https://ycheng2021.github.io",
   "dependencies": {
     "@apollo/client": "^3.6.2",
     "@emotion/react": "^11.9.0",
