@@ -1,5 +1,4 @@
 import React from "react";
-import { Switch } from "react-router";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
@@ -20,7 +19,7 @@ function App() {
 
   return (
     <Router>
-      <Switch>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
@@ -32,7 +31,7 @@ function App() {
           />
         ))}
         <Route path="*" element={<h1>Wrong Page!!</h1>} />
-      </Switch>
+      </Routes>
       <Footer />
     </Router>
   );
