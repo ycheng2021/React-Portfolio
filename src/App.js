@@ -18,24 +18,22 @@ function App() {
   ];
 
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          {projects.map((project) => (
-            <Route
-              key={project.name}
-              path={`portfolio/:${project.name}`}
-              element={<SingleProject />}
-            />
-          ))}
-          <Route path="*" element={<h1>Wrong Page!!</h1>} />
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/react-porfolio" element={<Home />} />
+        <Route path="react-portfolio/about" element={<About />} />
+        <Route path="react-portfolio/portfolio" element={<Portfolio />} />
+        {projects.map((project) => (
+          <Route
+            key={project.name}
+            path={`react-portfolio/portfolio/:${project.name}`}
+            element={<SingleProject />}
+          />
+        ))}
+        <Route path="*" element={<h1>Wrong Page!!</h1>} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
