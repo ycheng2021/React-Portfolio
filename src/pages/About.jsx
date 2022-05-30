@@ -20,6 +20,7 @@ import { FaFigma } from "react-icons/fa";
 import { SiMaterialui } from "react-icons/si";
 
 const About = () => {
+  // self introduction plus skills description
   return (
     <div className="about-page">
       <NavTabs />

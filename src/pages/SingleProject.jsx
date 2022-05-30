@@ -4,9 +4,12 @@ import Button from "@mui/material/Button";
 import NavTabs from "../components/NavTabs";
 
 const Project = () => {
+
+  // when the user is directed to the link, pull out the last word from the url to determine which data to display
   const url = window.location.href;
   var project = url.replace(/\/$/, "").split("/").splice(-1, 1)[0];
 
+  // create variables to store data for each project
   const home = {
     title: "Home Improvement",
     description:
@@ -73,7 +76,7 @@ const Project = () => {
       deployed: "https://ycheng2021.github.io/Weather-Dashboard/",
     },
   };
-
+  // depending which work user selects, it will pull up the information from the variables above
   if (project === "home-improvement") {
     project = home;
   } else if (project === "el-caro-modelo") {

@@ -7,6 +7,7 @@ import { MdEmail } from 'react-icons/md'
 
 
 const Footer = () => {
+    // footer with social media links
     return (
         <div id="footer">
             <div className="top-footer">

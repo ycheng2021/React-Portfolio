@@ -12,6 +12,7 @@ import quizImage from "../images/quiz.png";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
+  // simple cards with only an image for each project, click to direct to single project
   return (
     <div className="portfolio-page">
       <NavTabs />

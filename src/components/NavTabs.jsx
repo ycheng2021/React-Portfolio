@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import "../styles/style.css";
 
 const Home = () => {
+  // other pages that the home can reach
   const pages = [
     { name: "About", link: "/about" },
     { name: "Portfolio", link: "/portfolio" },
@@ -27,7 +28,7 @@ const Home = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  
   useEffect(() => {
     let url = window.location.href.split("/");
     let target = url[url.length - 1].toLowerCase();
