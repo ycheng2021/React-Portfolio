@@ -224,6 +224,12 @@ h2 {
     -webkit-text-fill-color: transparent;
 }
 
+.css-6jat1c:hover {
+    background-image: linear-gradient(to right, #ba81cf, #6886d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @media only screen and (max-width: 1240px) {
     .about {
         padding: 150px 20%;
