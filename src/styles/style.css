@@ -2,14 +2,18 @@ html {
     margin:0;
     padding: 0;
 }
+
 body {
     margin: 0;
     text-align: center;
     min-height: 100vh;
     position: relative;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-family: 'Happy Monkey', cursive;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 .about-page,
@@ -20,8 +24,9 @@ body {
 .pageslist {
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
-    padding-top: 25vh;
+    float: left;
+    margin-left: 10%;
+    margin-top: 20vh;
 }
 
 .home {
@@ -38,6 +43,13 @@ body {
     text-decoration: none !important;
 }
 
+.home-options {
+    font-size: 40px;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 40px auto;
+}
+
 .navbar {
     background-color: transparent !important;
     box-shadow: none !important;
@@ -49,9 +61,10 @@ body {
 
 .css-1q39md6-MuiButtonBase-root-MuiButton-root {
     font-size: 30px !important;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
 }
 
-.css-rhsghg {
+.css-o69gx8-MuiCardMedia-root  {
     object-fit: contain !important;
 }
 
@@ -91,9 +104,8 @@ body {
 .skills-container {
     max-width: 500px;
     margin: 0 auto;
-    padding-top: 200px;
-    margin-bottom: 200px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 150px;
+    margin-bottom: 150px;
 }
 
 .skills-list {
@@ -104,6 +116,11 @@ body {
 
 .skill {
     margin: 10px;
+}
+
+.soft-skills {
+    margin: 60px auto;
+    line-height: 30px;
 }
 
 #footer {
@@ -159,6 +176,11 @@ body {
     justify-content: center;
 } 
 
+.self-introduction {
+    line-height: 30px;
+    font-size: 20px;
+}
+
 .project-container {
     background-image: url("../images/background-gradient.jpg");
     height: 100%;
@@ -174,7 +196,7 @@ body {
 .image-container {
     display: flex;
     flex-direction: column;
-    padding-bottom: 180px;
+    padding-bottom: 250px;
 }
 
 .project-links {
@@ -188,6 +210,18 @@ body {
 .project-description {
     margin: 50px 10%;
     font-size: 20px;
+}
+
+.home-options:hover {
+    background-image: linear-gradient(to right, #ba81cf, #6886d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.css-1q39md6-MuiButtonBase-root-MuiButton-root:hover {
+    background-image: linear-gradient(to right, #ba81cf, #6886d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 1240px) {

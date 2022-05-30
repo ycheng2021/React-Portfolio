@@ -17,7 +17,7 @@ const Portfolio = () => {
       <NavTabs />
       <div className="portfolio-container">
         <div className="portfolio">
-          <h1 className="greeting">Things I've Built</h1>
+          <h1 className="greeting">Selection of Works</h1>
           <div className="portfolio-container">
             <div className="project-cards">
               <Link to="home-improvement">

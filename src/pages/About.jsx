@@ -11,6 +11,13 @@ import { SiAdobe } from "react-icons/si";
 import { SiJquery } from "react-icons/si";
 import { DiGit } from "react-icons/di";
 import { SiVisualstudiocode } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { SiInsomnia } from "react-icons/si"
+import { SiMongodb } from "react-icons/si";
+import { SiHeroku } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { FaFigma } from "react-icons/fa";
+import { SiMaterialui } from "react-icons/si";
 
 const About = () => {
   return (
@@ -32,7 +39,7 @@ const About = () => {
           with the MERN stack to improve my skills.
         </p>
         <div className="skills-container">
-          <h2>Skills</h2>
+          <h2>Skills and Tools</h2>
           <div className="skills-list">
             <div className="skill">
               <FaHtml5 className="icons" />
@@ -67,13 +74,45 @@ const About = () => {
               <h5 className="icon-name">React</h5>
             </div>
             <div className="skill">
+              <SiAdobe className="icons" />
+              <h5 className="icon-name">Adobe Suite</h5>
+            </div>
+            <div className="skill">
+              <GrMysql className="icons" />
+              <h5 className="icon-name">MySQL</h5>
+            </div>
+            <div className="skill">
               <DiGit className="icons" />
               <h5 className="icon-name">Git</h5>
             </div>
             <div className="skill">
-              <SiAdobe className="icons" />
-              <h5 className="icon-name">Adobe Suite</h5>
+              <SiMongodb className="icons" />
+              <h5 className="icon-name">MongoDB</h5>
             </div>
+            <div className="skill">
+              <FaNodeJs className="icons" />
+              <h5 className="icon-name">Nodejs</h5>
+            </div>
+            <div className="skill">
+              <SiInsomnia className="icons" />
+              <h5 className="icon-name">Insomnia</h5>
+            </div>
+            <div className="skill">
+              <SiHeroku className="icons" />
+              <h5 className="icon-name">Heroku</h5>
+            </div>
+            <div className="skill">
+              <FaFigma className="icons" />
+              <h5 className="icon-name">Figma</h5>
+            </div>
+            <div className="skill">
+              <SiMaterialui  className="icons" />
+              <h5 className="icon-name">Material UI</h5>
+            </div>
+          </div>
+          <div className="soft-skills">
+            <h2>Soft Skills</h2>
+              <p>✽ Attention to Detail ✽ Communication ✽ Fast Learner ✽ Teamwork ✽ Adaptabipty ✽ Problem Solving ✽ Self-reliance</p>             
           </div>
         </div>
       </div>
