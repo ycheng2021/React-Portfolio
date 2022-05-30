@@ -224,6 +224,11 @@ h2 {
     -webkit-text-fill-color: transparent;
 }
 
+.css-6jat1c {
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: 30px;
+}
+
 .css-6jat1c:hover {
     background-image: linear-gradient(to right, #ba81cf, #6886d4);
     -webkit-background-clip: text;
