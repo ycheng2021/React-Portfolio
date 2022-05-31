@@ -113,7 +113,7 @@ const About = () => {
           </div>
           <div className="soft-skills">
             <h2>Soft Skills</h2>
-              <p>✽ Attention to Detail ✽ Communication ✽ Fast Learner ✽ Teamwork ✽ Adaptabipty ✽ Problem Solving ✽ Self-reliance</p>             
+              <p>✽ Attention to Detail ✽ Communication ✽ Fast Learner ✽ Teamwork ✽ Adaptability ✽ Problem Solving ✽ Self-reliance</p>             
           </div>
         </div>
       </div>
